@@ -29,7 +29,7 @@ app.use("/api/v1/category", categoryRoutes);
 
 //rest api
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
+  res.send("<h1>Welcome</h1>");
 });
 
 //PORT
