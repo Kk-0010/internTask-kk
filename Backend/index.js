@@ -19,10 +19,11 @@ const app = express();
 
 //middelwares
 app.use(cors(
+  {
   origin: ["https://intern-task-kk-frontend.vercel.app"],
   methods:["POST","GET"],
-  credentials:true;
-}
+  credentials:true
+  }
 ));
 app.use(express.json());
 app.use(morgan("dev"));
