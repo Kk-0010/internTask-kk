@@ -17,7 +17,7 @@ const Dashboard = () => {
         const decodedToken = JSON.parse(atob(token.split('.')[1]));
         const userId = decodedToken._id;
 
-        const res = await axios.get(`http://localhost:8000/api/v1/auth/dashboard/${userId}`, {
+        const res = await axios.get(`https://intern-task-kk-backend.vercel.app/api/v1/auth/dashboard/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
