@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://intern-task-kk-backend.vercel.app/register", formData);
+      const res = await axios.post("https://intern-task-kk-backend.vercel.app/register", formData);
       alert(res.data.message);
       navigate("/login");
     } catch (err) {
